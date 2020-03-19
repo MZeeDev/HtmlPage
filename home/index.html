@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html class="page-home" lang="en">
+  <head>
+    <title>MeetFrank - Recruitment App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find cool job offers with the MeetFrank recruitment app. Add your job offers to MeetFrank and hire top talent."
+    />
+    <meta property="og:url" content="https://meetfrank.com" />
+    <meta property="og:title" content="MeetFrank" />
+    <meta
+      property="og:description"
+      content="Find cool job offers with the MeetFrank recruitment app. Add your job offers to MeetFrank and hire top talent."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://static-media.meetfrank.com/images/og/feature.jpg"
+    />
+    <link
+      href="./landing-assets/app-47fe6c9c850a39e1f88c.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="page-container">
+      <div class="sticky-header-spacer"></div>
+      <div class="header-alert" id="alert-covid19">
+        <div class="alert-container max-width-wrapper">
+          <img
+            class="heart-icon"
+            src="./landing-assets/heart-icon.d591a716.svg"
+            alt=""
+          />
+          <div>
+            <div class="title">Let’s get through the hard times together</div>
+            <div class="description">
+              <span
+                >To help job-seekers around the globe, we have launched the
+                Remote Work Feed in our app. All new companies hiring with
+                MeetFrank will have a free trial and we will extend it
+                throughout the crisis. Help the community by adding all your
+                remote job offers to the MeetFrank app. </span
+              ><a class="close" href="/business-relocation">Get started.</a>
+            </div>
+          </div>
+          <img
+            class="close"
+            id="alert-covid19-close"
+            src="./landing-assets/close.e75238f0.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <header class="talent-header header-container">
+        <div class="header-wrapper max-width-wrapper">
+          <div class="left">
+            <div class="logo">
+              <a href="/"
+                ><img
+                  class="site-logo"
+                  src="./landing-assets/meetfrank.ce90295d.svg"
+                  alt="MeetFrank logo"
+              /></a>
+            </div>
+          </div>
+          <div class="right">
+            <a
+              class="nav-bar-link btn btn-transparent btn-small btn-link-in-mobile"
+              href="/business"
+              >For companies</a
+            >
+          </div>
+        </div>
+      </header>
+      <script>
+        (function(b, r, a, n, c, h, _, s, d, k) {
+          if (!b[n] || !b[n]._q) {
+            for (; s < _.length; ) c(h, _[s++]);
+            d = r.createElement(a);
+            d.async = 1;
+            d.src = "https://cdn.branch.io/branch-latest.min.js";
+            k = r.getElementsByTagName(a)[0];
+            k.parentNode.insertBefore(d, k);
+            b[n] = h;
+          }
+        })(
+          window,
+          document,
+          "script",
+          "branch",
+          function(b, r) {
+            b[r] = function() {
+              b._q.push([r, arguments]);
+            };
+          },
+          { _q: [], _v: 1 },
+          "addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(
+            " "
+          ),
+          0
+        );
+
+        branch.init("key_live_lhBVen1kBOWREdW00HeLclblFxku6UYv");
+        function sendSMS(form) {
+          var form = document.getElementById("sms-form");
+          form.classList.add("is-loading");
+          form.querySelector(".error").innerHTML = "";
+
+          var phone = form.phone.value;
+          var linkData = {
+            channel: "Register",
+            feature: "TextMeTheApp"
+          };
+          var options = {};
+          var callback = function(err, result) {
+            form.classList.remove("is-loading");
+
+            if (err) {
+              form.classList.add("is-error");
+              form.querySelector(".error").innerHTML =
+                "Failed to send, please check your number.";
+            } else {
+              form.classList.add("is-success");
+            }
+
+            setTimeout(function() {
+              form.classList.remove("is-error");
+              form.classList.remove("is-success");
+            }, 3000);
+          };
+          branch.sendSMS(phone, linkData, options, callback);
+          form.phone.value = "";
+        }
+      </script>
+      <div class="hero-area-container">
+        <div class="max-width-wrapper side-by-side">
+          <div class="text-side">
+            <h1 class="highlighted-title hero-title yellow">
+              <span class="alt-font"
+                >Tak<span class="d">e</span> cha<span class="d">r</span>ge</span
+              >
+              of your career.<svg
+                viewBox="0 0 50 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0a50 50 0 010 100" fill="transparent" />
+              </svg>
+            </h1>
+            <div class="hero-desc">
+              <p class="desc-text">
+                Find out who wants to hire you and what are they willing to
+                pay.&nbsp;<button
+                  class="modal-opener-button"
+                  id="video-modal-opener"
+                >
+                  Watch the video.
+                </button>
+              </p>
+            </div>
+            <img
+              class="media small-screen-only"
+              src="./landing-assets/talent-hero-img.44632ae2.jpg"
+              srcset="
+                ./landing-assets/talent-hero-img.44632ae2.jpg    1x,
+                ./landing-assets/talent-hero-img-2x.73390b86.jpg 2x
+              "
+              width="759"
+              height="570"
+              alt=""
+            />
+            <div class="get-app">Download app:</div>
+            <div class="app-links-container">
+              <a
+                class="app-link"
+                href="https://itunes.apple.com/us/app/frank-secret-recruitment-app/id1279876427?ls=1&amp;mt=8"
+                ><img
+                  class="app-store-img"
+                  src="./landing-assets/app-store-dark.4d7d9f21.svg"
+                  alt="Download the MeetFrank app"/></a
+              ><a
+                class="app-link"
+                href="https://play.google.com/store/apps/details?id=com.meetfrank.android"
+                ><img
+                  class="play-store-img"
+                  src="./landing-assets/play-store-dark.0b08f385.svg"
+                  alt="Download the MeetFrank app"
+              /></a>
+            </div>
+            <form
+              class="text-app-link-container minimalistic-form async-form"
+              onsubmit="sendSMS(this); return false;"
+              id="sms-form"
+            >
+              <div class="side-by-side">
+                <input
+                  class="insert-input form-control"
+                  type="tel"
+                  placeholder="+372 0000 0000"
+                  id="phone"
+                  aria-label="Your phone number"
+                  required
+                /><button
+                  class="submit-data btn btn-blue form-control submit-btn"
+                  type="submit"
+                >
+                  <span class="default-text">Text me the app link</span
+                  ><span class="error-text">Failed</span
+                  ><span class="success-text">Link sent!</span
+                  ><span class="loading-text">Sending...</span>
+                </button>
+              </div>
+              <div class="error"></div>
+            </form>
+          </div>
+          <div class="media-side">
+            <img
+              class="media large-screen-only"
+              src="./landing-assets/talent-hero-img.44632ae2.jpg"
+              srcset="
+                ./landing-assets/talent-hero-img.44632ae2.jpg    1x,
+                ./landing-assets/talent-hero-img-2x.73390b86.jpg 2x
+              "
+              width="759"
+              height="570"
+              alt="MeetFrank app"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="max-width-wrapper">
+          <div class="follow-us-title">Follow us</div>
+          <div class="follow-us">
+            <div class="category">
+              <a href="https://www.facebook.com/meetfrankapp">Facebook</a
+              ><a href="https://twitter.com/MeetFrankApp">Twitter</a
+              ><a href="https://www.linkedin.com/company/meetfrank/"
+                >Linkedin</a
+              >
+            </div>
+            <div class="category">
+              <a href="/business">Start hiring</a
+              ><a href="/about-us">About us</a
+              ><a href="https://meetfrank.com/blog">Blog</a
+              ><a href="https://meetfrank.com/privacy">Privacy policy</a
+              ><a href="https://meetfrank.com/terms">User Terms</a>
+            </div>
+            <div class="category"><span>© 2020 MeetFrank OÜ</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal video-modal main" id="video-modal">
+        <div class="backdrop" id="modal-backdrop"></div>
+        <div class="content-area">
+          <div class="video-wrapper">
+            <button class="close-modal-button" id="close-modal-button"></button
+            ><iframe
+              class="introduction-video"
+              frameborder="0"
+              style="border: 0.8rem"
+              width="800"
+              height="450"
+              src="https://player.vimeo.com/video/335830801?portrait=false&amp;title=false&amp;byline=false&amp;texttrack=en"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="modal application-modal" id="application-modal">
+        <div class="backdrop" id="application-modal-backdrop"></div>
+        <div class="content-area">
+          <button
+            class="close-modal-button close-application-button"
+            id="close-application-modal-button"
+          ></button>
+          <div class="content-panels">
+            <div class="left-panel">
+              <img
+                class="application-moustache"
+                src="./landing-assets/moustache.972b71dd.svg"
+                alt=""
+              />
+              <div class="left-panel-title">
+                Apply for <br />
+                access.
+              </div>
+              <div class="left-panel-desc">
+                Please provide your details and we will get back to you in 24
+                hours. Already have an account? &nbsp<a
+                  class="login-link"
+                  href="https://meetfrank.com/employer/login"
+                  >Log in</a
+                >
+              </div>
+            </div>
+            <div class="right-panel">
+              <form class="application-form" id="application-form">
+                <input
+                  class="application-input"
+                  name="companyName"
+                  type="text"
+                  placeholder="Company name"
+                /><input
+                  class="application-input"
+                  id="modal-application-email"
+                  name="email"
+                  type="text"
+                  placeholder="Your e-mail"
+                /><input
+                  class="application-input"
+                  name="phone"
+                  type="text"
+                  placeholder="Phone number"
+                /><button
+                  class="btn btn-blue submit-application-btn"
+                  type="submit"
+                >
+                  <span class="default-text">Submit</span
+                  ><span class="result-msg"></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.intercomSettings = {
+        app_id: "t1civ5yf"
+      };
+    </script>
+    <script>
+      (function() {
+        var w = window;
+        var ic = w.Intercom;
+        if (typeof ic === "function") {
+          ic("reattach_activator");
+          ic("update", w.intercomSettings);
+        } else {
+          var d = document;
+          var i = function() {
+            i.c(arguments);
+          };
+          i.q = [];
+          i.c = function(args) {
+            i.q.push(args);
+          };
+          w.Intercom = i;
+          var l = function() {
+            var s = d.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://widget.intercom.io/widget/t1civ5yf";
+            var x = d.getElementsByTagName("script")[0];
+            x.parentNode.insertBefore(s, x);
+          };
+          if (w.attachEvent) {
+            w.attachEvent("onload", l);
+          } else {
+            w.addEventListener("load", l, false);
+          }
+        }
+      })();
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "123828831609081");
+      fbq("init", "581175346040062");
+      fbq("track", "PageView", { isPayingCustomer: "" });
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=123828831609081&amp;ev=PageView&amp;noscript=1"/><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=581175346040062&amp;ev=PageView&amp;noscript=1"
+    /></noscript>
+
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+    <script>
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js"
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T6DKK3K");
+    </script>
+    <script
+      type="text/javascript"
+      src="./landing-assets/app-895511613e0b3f5f1a22.js"
+    ></script>
+  </body>
+</html>
